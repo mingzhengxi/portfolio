@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Modern</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">MY.LOGO</div>
+    <button class="nav-toggle" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav">
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero__content">
+        <p class="eyebrow">안녕하세요, 저는</p>
+        <h1>크리에이티브 프론트엔드 개발자</h1>
+        <p class="subtext">
+          사용자 경험을 최우선으로 두고, 빠르고 직관적인 웹을 만듭니다.
+          모던 스택과 탄탄한 기획으로 문제를 해결합니다.
+        </p>
+        <div class="hero__cta">
+          <a class="btn primary" href="#projects">프로젝트 보기</a>
+          <a class="btn ghost" href="#contact">연락하기</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="floating-card">
+          <p>Latest Work</p>
+          <h3>Design System</h3>
+          <span>Atomic 디자인 · 접근성 · 반응형</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section__head">
+        <p class="eyebrow">Selected Works</p>
+        <h2>프로젝트 하이라이트</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="badge">Web App</div>
+          <h3>SaaS 대시보드</h3>
+          <p>실시간 데이터와 다중 차트, 다크모드 지원 대시보드 구축.</p>
+          <ul>
+            <li>React + TypeScript</li>
+            <li>반응형 & 접근성</li>
+            <li>CI/CD 자동화</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="badge">Brand</div>
+          <h3>랜딩 페이지</h3>
+          <p>전환율을 높이는 인터랙션과 A/B 테스트 기반 최적화.</p>
+          <ul>
+            <li>Next.js 정적 생성</li>
+            <li>SEO & 퍼포먼스 90+</li>
+            <li>모션 디테일</li>
+          </ul>
+        </article>
+        <article class="project-card">
+          <div class="badge">Mobile</div>
+          <h3>PWA 경험 개선</h3>
+          <p>오프라인 캐싱, 푸시 알림, 앱 같은 전환을 제공.</p>
+          <ul>
+            <li>Service Worker</li>
+            <li>성능 튜닝 (Lighthouse 95)</li>
+            <li>사용자 여정 리디자인</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="about__text">
+        <p class="eyebrow">About</p>
+        <h2>사용자를 이해하는 개발자</h2>
+        <p>
+          데이터와 사용자 피드백을 바탕으로 기능 우선순위를 잡고,
+          명확한 커뮤니케이션과 문서화를 중요하게 생각합니다.
+          접근성과 성능, 유지보수를 고려한 설계에 집중합니다.
+        </p>
+      </div>
+      <div class="about__stats">
+        <div class="stat">
+          <strong>5+</strong>
+          <span>년 경험</span>
+        </div>
+        <div class="stat">
+          <strong>30+</strong>
+          <span>프로젝트</span>
+        </div>
+        <div class="stat">
+          <strong>4.9</strong>
+          <span>만족도</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section__head">
+        <p class="eyebrow">Contact</p>
+        <h2>함께 이야기해요</h2>
+        <p class="subtext">프로젝트 문의나 협업 제안을 환영합니다.</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">이름</label>
+          <input id="name" name="name" type="text" placeholder="이름을 입력하세요" required>
+        </div>
+        <div class="form-group">
+          <label for="email">이메일</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="4" placeholder="프로젝트나 문의 내용을 적어주세요" required></textarea>
+        </div>
+        <button type="submit" class="btn primary full">보내기</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 Your Name. All rights reserved.</div>
+    <div class="socials">
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="GitHub">GH</a>
+      <a href="#" aria-label="Dribbble">Dr</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
